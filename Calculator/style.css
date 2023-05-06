@@ -1,0 +1,117 @@
+/* Styles for the Calculator */
+
+/* Universal */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: 0;
+  transition: all 0.5s ease;
+}
+
+body{
+  font-family: 'Times New Roman';
+  background-color: black;
+}
+
+/* Main */
+div.title{
+  color: white;
+  position: absolute;
+  bottom: 90%;
+}
+
+div.container{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+div.calculator{
+  position: relative;
+  height: auto;
+  width: auto;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0 0 30px white;
+  background-color: rgb(59, 59, 59);
+}
+
+/* Display */
+div#display{
+  margin: 0 10px;
+  height: 120px;
+  width: 270px;
+  word-wrap: break-word;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 12px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  overflow-y: scroll;
+  white-space: pre-wrap;
+  border: 1px solid white;
+  border-radius: 25px;
+  color: #f8fafb;
+  word-wrap: break-word;
+
+}
+
+#display::-webkit-scrollbar{
+  display: block;
+  height: 3px;
+}
+
+/* Buttons */
+button{
+  height: 60px;
+  width: 60px;
+  border: 0;
+  border-radius: 30px;
+  margin: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 200ms ease;
+}
+
+button:hover{
+  transform: scale(1.1);
+}
+
+button#clear{
+background-color: rgb(82, 6, 6);
+color: white;
+}
+
+button.btn-bracket{
+  background-color: lightseagreen;
+  color: black;
+}
+
+button.btn-operator{
+  background-color: rgb(148, 117, 58);
+  color: white;
+}
+
+button.btn-number{
+  background-color: rgb(9, 9, 84);
+  color: white;
+}
+
+button#backspace{
+  color: red;
+  background-color: honeydew;
+}
+
+button.btn-period{
+  background-color: lightseagreen;
+}
+  
+button.btn-equal {
+  background-color: darkgreen;
+  color: #ffffff;
+}
+
+
